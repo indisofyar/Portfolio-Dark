@@ -25,11 +25,10 @@
                 </router-link>
               </li>
               <li>
-                <router-link
-                  class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                  to="/contact">
+                <button class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                  @click="showContact">
                   Contact
-                </router-link>
+                </button>
               </li>
             </ul>
           </nav>
@@ -41,8 +40,9 @@
   </header>
 
   <div class="min-h-50">
+    <Contact ></Contact>
     <!-- <transition name="fade" mode="out-in"> -->
-      <router-view> </router-view>
+    <router-view> </router-view>
     <!-- </transition> -->
   </div>
 
@@ -59,7 +59,7 @@
           <li><router-link to="/reach">Project: Reach</router-link></li>
           <li><router-link to="/dot-iam">Project: DotIam</router-link></li>
           <li><router-link to="/about">About</router-link></li>
-          <li><router-link to="/contact">Contact</router-link></li>
+          <li @click="showContact">Contact</li>
         </ul>
       </div>
     </div>
@@ -69,17 +69,22 @@
 <script>
 // import { createApp } from 'vue'
 import router from './router'
+import Contact from './components/Contact.vue'
 // const app = new Vue({})
 
 export default {
-  name: 'App',
+  name: "App",
   router,
-  // Other component options
+  methods: {
+    showContact() {
+      this.$store.commit('displayContact');
+    },
+  },
+  components: { Contact }
 }
 </script>
 
 <style lang="scss">
-
 @import "@/assets/css/tailwind.css"
 @import "@/assets/css/animate.min.css"
 </style>

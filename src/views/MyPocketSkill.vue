@@ -23,7 +23,7 @@
             <span class="text-gray-400">Figma & Figjam</span>
           </div>
           <div class="mt-3 md:mt-0">Duration<br>
-            <span class="text-gray-400">1 month</span>
+            <span class="text-gray-400">10 months</span>
           </div>
         </div>
       </div>
@@ -106,7 +106,9 @@
         <div class="banner-float animate__animated animate__fadeIn  max-w-2xl  ">
 
           <h2 class="mb-4 text-3xl italic ">Identifying trends and prioritising</h2>
-          <p class="text-gray-400">It was common for to take the results of ux research, identify trends within them, and prioritise ways of improving them. Through this I could work the team to push out 'quick-wins' each week which would create immediate value for users, whilst helping them identify what to prioritise and
+          <p class="text-gray-400">It was common for to take the results of ux research, identify trends within them, and
+            prioritise ways of improving them. Through this I could work the team to push out 'quick-wins' each week which
+            would create immediate value for users, whilst helping them identify what to prioritise and
           </p>
         </div>
       </div>
@@ -119,23 +121,26 @@
         <div class="banner-float animate__animated animate__fadeIn  max-w-2xl  ">
 
           <h2 class="mb-4 text-3xl italic ">Proceeding to design</h2>
-          <p class="text-gray-400">Finally, after receiving sign off from the team and categorising and sorting acquiring user feedback, I would proceed to design. 
-          </p>    
+          <p class="text-gray-400">Finally, after receiving sign off from the team and categorising and sorting acquiring
+            user feedback, I would proceed to design.
+          </p>
           <h3 class="mb-4 text-2xl italic mt-6">Objectives</h3>
           <ol class="list-decimal text-gray-400">
-          <li class=" text-lg mb-6">Improve mobile friendliness of components
-            <br>
-            <span class="text-base italic">Adjusted sizing, improved consistency and visual style. </span>
-          </li>
-          <li class=" text-lg mb-6">Improve ease of navigation
-            <br>
-            <span class="text-base italic">Added sorting categories for search filter and personalised user journeys more. </span>
-          </li>
-          <li class=" text-lg mb-6">Reduce disruption and annoyances for users
-            <br>
-            <span class="text-base italic">Removed chatbot which would popup at unwanted times & reduced cumulative layout shift. </span>
-          </li>
-        </ol>
+            <li class=" text-lg mb-6">Improve mobile friendliness of components
+              <br>
+              <span class="text-base italic">Adjusted sizing, improved consistency and visual style. </span>
+            </li>
+            <li class=" text-lg mb-6">Improve ease of navigation
+              <br>
+              <span class="text-base italic">Added sorting categories for search filter and personalised user journeys
+                more. </span>
+            </li>
+            <li class=" text-lg mb-6">Reduce disruption and annoyances for users
+              <br>
+              <span class="text-base italic">Removed chatbot which would popup at unwanted times & reduced cumulative
+                layout shift. </span>
+            </li>
+          </ol>
         </div>
       </div>
 
@@ -148,17 +153,20 @@
         <h2 class="mb-4 text-2xl italic">Post-redesign</h2>
         <img src="assets/images/new-screens.png" alt="platform screencap"
           class="w-full max-w-5xl  rounded-xl object-contain" />
-          
+
       </div>
-      <div class="max-w-screen-xl mx-auto container  px-4  sm:px-6 lg:px-8 mt-4">
-      <RouterLink to="/">
-          <button class="button w-full mt-12 flex items-center justify-center gap-3  max-w-5xl ">Back to projects <svg xmlns="http://www.w3.org/2000/svg" width="16"
-              height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-            </svg></button>
-        </RouterLink>
-</div>
+      <div class="max-w-screen-lg mx-auto container  px-4 sm:py-12 sm:px-6 lg:py-14 lg:px-8">
+        <div class="banner-float animate__animated animate__fadeIn  max-w-2xl  ">
+          <RouterLink to="/projects">
+            <button class="button w-full mt-12 flex items-center justify-center gap-3  max-w-5xl ">Back to projects <svg
+                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+              </svg></button>
+          </RouterLink>
+        </div>
+      </div>
     </section>
   </div>
   <div v-else class="min-h-[100vh] flex items-center justify-center w-full p-3">

@@ -4,14 +4,14 @@
   <section class="bg-gray-950 text-white">
     <div class="max-w-screen-lg mx-auto container  px-4 sm:px-6">
       <div class="banner-float animate__animated animate__fadeIn  max-w-2xl  pt-14">
-        <h2 class="mb-4 text-3xl italic">Introduction</h2>
+        <!-- <h2 class="mb-4 text-3xl italic">Introduction</h2>
         <p class="text-gray-400">Outreach workers provide support, referrals and education to individuals in need across
           Australia. They work
           for different organisations such as The Court Network, SESLHD and others. They often undergo a high degree of
           training and work closely with others to improve outreach skills. With 62,200 Australian currently employed as
           Welfare Support Workers (Australian Government Job Outlook, 2020) and many of them conducting outreach, this is
           a significant financial burden for the organisations involved.
-        </p>
+        </p> -->
         <h2 class="mb-4 text-3xl italic">Problem space</h2>
         <p class="text-gray-400">Outreach workers provide support, referrals and education to individuals in need across
           Australia. They work
@@ -23,7 +23,7 @@
       </div>
       <div class="banner-float animate__animated animate__fadeIn  max-w-2xl mt-14">
         <h2 class="mb-4 text-3xl italic">Research</h2>
-        <p class="text-gray-400">Video call interviews helped to substantiate evidence, that were outreach workers and
+        <p class="text-gray-400 mb-2">Video call interviews helped to substantiate evidence, that were outreach workers and
           outreach worker
           managerial staff, helped me understand what issues they faced. Gaining both perspectives, I believed, was vital
           to creating a design solution which could be realistically implemented and also address user needs.
@@ -137,7 +137,7 @@
           potential to transform their organisation. I really enjoyed creating this project and it helped emphasise the
           importance of research and going wide with the problem before creating focus in design.
         </p>
-        <RouterLink to="/">
+        <RouterLink to="/projects">
           <button class="button w-full mt-12 flex items-center justify-center gap-3">Back to projects <svg xmlns="http://www.w3.org/2000/svg" width="16"
               height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
               <path fill-rule="evenodd"

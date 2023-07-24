@@ -7,8 +7,7 @@
     <div class=" my-30 md:min-h-[50vh]">
       <h1 class="text-3xl font-bold mb-3">Contact</h1>
       <div class="col-12 text-lg" style="font-size: 20px;">
-      <i class="bi bi-linkedin"></i> <a href="www.linkedin.com/in/">Connect with me on LinkedIn</a> <br>
-      <i class="bi bi-envelope"></i>  <a href="mailto:indisofyar@gmail.com">Email me at indisofyar@gmail.com</a>
+
     
     </div>
     </div>

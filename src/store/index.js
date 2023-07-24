@@ -8,6 +8,7 @@ export default createStore({
     unlockError: false,
     encryptionKey: 'welcometomyportfolio',
     viewing: 'all',
+    showContact: false,
   },
   getters: {},
   mutations: {
@@ -19,6 +20,9 @@ export default createStore({
           state.unlockError = true;
         }, 1000);
       }
+    },
+    displayContact(state) {
+      state.showContact = !state.showContact
     },
     setViewing(state, viewing) {
       if (viewing === 'ux') {
