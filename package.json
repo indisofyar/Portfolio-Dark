@@ -17,6 +17,7 @@
     "scss": "^0.2.4",
     "serve": "^14.2.0",
     "vue": "^3.2.13",
+    "vue-easy-lightbox": "^1.16.0",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0",
     "vuex-persistedstate": "^4.1.0"
@@ -24,6 +25,7 @@
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
+    "@nuxt/image": "^1.0.0-rc.1",
     "@squoosh/lib": "^0.5.3",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",

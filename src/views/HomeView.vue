@@ -20,7 +20,7 @@
   </div>
 
 
-  <section class="bg-gray-950 text-white min-h-[100vh] " id="projects">
+  <section class="bg-gray-950 text-white min-h-[100vh]  relative z-20" id="projects">
     <div class="max-w-screen-xl mx-auto container  px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8 ">
       <div class="banner-float animate__animated animate__fadeIn">
         <h2 class=" uppercase tracking-widest text-xl  mb-8 font-light font-sans">Projects</h2>
@@ -40,13 +40,16 @@
                     class="bi bi-arrow-right"></i></button></router-link>
             </div>
             <div style="display: flex; justify-content: center;">
-              <div class="image-container"><img src="assets/images/mps-cover2.png" class="rounded max-h-[270px] object-cover"
-                  alt="platform screencap" style="width: 100%;"></div>
+              <div class="image-container relative z-11">
+               
+                <vue-image img="assets/images/mps-cover2.png" class="rounded max-h-[270px] object-cover"
+                  alt="platform screencap" style="width: 100%;"/>
+                </div>
             </div>
           </div>
         </transition>
         <transition name="fade" mode="out-in">
-          <div data-aos="fade-up" data-aos-duration="1200" class="md:columns-2 gap-10 mx-auto mb-10"
+          <div data-aos="fade-up" data-aos-duration="1200" class="md:columns-2 gap-10 mx-auto mb-10 "
             v-if="projects != 'fsd'">
             <div class="col-md-5 w-full" data-aos="fade-up" data-aos-duration="1600">
               <h3 class="mb-2 text-3xl">Reach App</h3>
@@ -70,10 +73,10 @@
                 </button>
               </router-link>
             </div>
-            <div style="display: flex; justify-content: center;">
+            <div style="display: flex; justify-content: center;" >
 
-              <div class="image-container">
-                <img src="assets/images/reach.png" style="width: 100%;" class="rounded max-h-[270px] object-cover" alt="platform screencap" />
+              <div class="image-container ">
+                <vue-image img="assets/images/reach.png" style="width: 100%;" class="rounded max-h-[270px] object-cover" alt="platform screencap" />
               </div>
             </div>
           </div>
@@ -105,7 +108,7 @@
             <div style="display: flex; justify-content: center;">
 
               <div class="image-container">
-                <img src="assets/images/dotiam-cover.png" style="width: 100%;" class="rounded max-h-[270px] object-cover" alt="platform screencap" />
+                <vue-image img="assets/images/dotiam-cover.png" style="width: 100%;" class="rounded max-h-[270px] object-cover" alt="platform screencap" />
               </div>
             </div>
           </div>
@@ -120,9 +123,11 @@
 <script>
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
+import VueImage from '@/components/VueImage.vue';
 
 export default {
   name: 'HomeView',
+  components: { VueImage },
   data() {
     return {
       projects: 'all',

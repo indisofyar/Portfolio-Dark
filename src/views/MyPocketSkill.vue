@@ -1,8 +1,8 @@
 <template>
   <div v-if="!$store.state.unlocked">
     <section class="bg-gray-950 text-white">
-      <div class="max-w-screen-lg mx-auto container  px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8 ">
-        <div class="banner-float animate__animated animate__fadeIn pt-[100px] max-w-2xl">
+      <div class="max-w-screen-lg mx-auto container  px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-">
+        <div class="banner-float animate__animated animate__fadeIn pt-[100px] max-w-3xl mx-auto boder">
           <h1 class="mb-4 text-5xl md:text-6xl italic">MyPocketSkill</h1>
           <p class="mb-14 text-xl font-extralight">Improving MyPocketSkill's navigation experience</p>
           <p class="text-gray-400">MyPocketSkill UI had previously been bootstrapped with minimal design input. I joined
@@ -12,28 +12,30 @@
             user-testing, user interviews and within-team discussions.
           </p>
         </div>
-        <div class="columns-2 md:columns-4 gap-2 banner-float animate__animated animate__fadeIn pt-20 max-w-3xl text-sm ">
+        <div class="columns-2 md:columns-3 banner-float animate__animated animate__fadeIn pt-20 max-w-3xl mx-auto text-sm ">
           <div>Role<br>
-            <span class="text-gray-400">UX Designer</span>
+            <span class="text-gray-400">UX Designer</span><br>
+            <span class="text-gray-400">Front-end developer</span>
           </div>
           <div class="mt-3 md:mt-0"> Purpose<br>
-            <span class="text-gray-400">Commercial project</span>
+            <span class="text-gray-400">Commercial</span><br>
+            <span class="text-gray-400">project</span>
+
           </div>
           <div>Tools<br>
-            <span class="text-gray-400">Figma & Figjam</span>
+            <span class="text-gray-400">Figma</span><br>
+            <span class="text-gray-400">Google Analytics</span>
           </div>
-          <div class="mt-3 md:mt-0">Duration<br>
-            <span class="text-gray-400">10 months</span>
-          </div>
+ 
         </div>
       </div>
       <div class="max-w-screen-xl mx-auto container  px-4  sm:px-6 lg:px-8 ">
 
-        <img src="assets/images/mps-cover2.png" alt="platform screencap"
-          class="w-full max-w-5xl rounded-xl object-contain" />
+        <vue-image img="assets/images/mps-cover2.png" alt="platform screencap"
+          class="w-full max-w-5xl rounded-xl object-contain mx-auto" />
       </div>
       <div class="max-w-screen-lg mx-auto container  px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8 ">
-        <div class="banner-float animate__animated animate__fadeIn  max-w-2xl  ">
+        <div class="mx-auto banner-float animate__animated animate__fadeIn  max-w-3xl  ">
           <h2 class="mb-4 text-3xl italic">Impact</h2>
           <p class="text-gray-400">A combination of incremental improvements and larger redesigns created a big impact.
           </p>
@@ -41,7 +43,7 @@
         </div>
       </div>
       <div class="max-w-screen-xl mx-auto container  px-4  sm:px-6 lg:px-8 ">
-        <div class="gap-4 max-w-5xl grid md:grid-cols-3">
+        <div class="gap-4 max-w-5xl grid md:grid-cols-3 mx-auto">
           <div
             class="relative flex items-start justify-between rounded-xl border border-gray-100 p-4 shadow-xl sm:p-6 lg:p-8 lg:min-h-[300px]">
             <div class="pt-4 text-gray-500"><span class="text-3xl">💷</span>
@@ -80,8 +82,8 @@
         </div>
       </div>
       <div class="max-w-screen-lg mx-auto container  px-4 py-8 sm:py-12 sm:px-6 lg:py-14 lg:px-8">
-        <div class="banner-float animate__animated animate__fadeIn  max-w-2xl  ">
-          <img src="assets/images/google-analytics.png" alt="platform screencap"
+        <div class="banner-float animate__animated animate__fadeIn  max-w-3xl  mx-auto">
+          <vue-image img="assets/images/google-analytics.png" alt="platform screencap"
             class="w-full max-w-5xl rounded-xl object-contain" />
           <h2 class="mb-4 text-3xl italic mt-12">Research</h2>
           <p class="text-gray-400">Research was conducted through regular user-testing and user interviews. The focus was
@@ -91,19 +93,19 @@
         </div>
       </div>
       <div class="max-w-screen-xl mx-auto container  px-4  sm:px-6 lg:px-8 mt-4 grid ">
-        <div class="md:grid-cols-3 gap-4 grid  overflow-hidden max-w-5xl ">
-          <img src="assets/images/interview-1.png" alt="platform screencap"
+        <div class="md:grid-cols-3 gap-4 grid  overflow-hidden max-w-5xl mx-auto ">
+          <vue-image img="assets/images/interview-1.png" alt="platform screencap"
             class="w-full max-w-5xl  rounded-xl object-cover h-[380px]" />
-          <img src="assets/images/interview-2.png" alt="platform screencap"
-            class="w-full max-w-5xl  rounded-xl object-cover max-h-[380px]" />
-          <img src="assets/images/sticky-notes.png" alt="ux artifacts"
+          <vue-image img="assets/images/interview-2.png" alt="platform screencap"
+            class="w-full max-w-5xl  rounded-xl max-h-[380px]" />
+          <vue-image img="assets/images/sticky-notes.png" alt="ux artifacts"
             class="w-full max-w-5xl  rounded-xl object-cover h-[380px]" />
         </div>
-        <p class="text-gray-400 text-center max-w-5xl mt-4">Different UX artifacts collected
+        <p class="text-gray-400 text-center max-w-5xl mt-4 mx-auto">Different UX artifacts collected
         </p>
       </div>
       <div class="max-w-screen-lg mx-auto container  px-4 py-8 sm:py-12 sm:px-6 lg:py-14 lg:px-8 mt-4">
-        <div class="banner-float animate__animated animate__fadeIn  max-w-2xl  ">
+        <div class="banner-float animate__animated animate__fadeIn  max-w-3xl  mx-auto">
 
           <h2 class="mb-4 text-3xl italic ">Identifying trends and prioritising</h2>
           <p class="text-gray-400">It was common for to take the results of ux research, identify trends within them, and
@@ -112,13 +114,13 @@
           </p>
         </div>
       </div>
-      <div class="max-w-screen-xl mx-auto container  px-4  sm:px-6 lg:px-8 mt-4">
+      <div class="max-w-screen-xl mx-auto container  px-4  sm:px-6 lg:px-8 mt-4 ">
 
-        <img src="assets/images/prioritisation-matrix.png" alt="platform screencap"
-          class="w-full max-w-5xl  rounded-xl object-contain" />
+        <vue-image img="assets/images/prioritisation-matrix.png" alt="platform screencap"
+          class="w-full max-w-5xl  rounded-xl object-contain mx-auto" />
       </div>
       <div class="max-w-screen-lg mx-auto container  px-4 py-8 sm:py-12 sm:px-6 lg:py-14 lg:px-8 mt-6">
-        <div class="banner-float animate__animated animate__fadeIn  max-w-2xl  ">
+        <div class="banner-float animate__animated animate__fadeIn  max-w-3xl mx-auto ">
 
           <h2 class="mb-4 text-3xl italic ">Proceeding to design</h2>
           <p class="text-gray-400">Finally, after receiving sign off from the team and categorising and sorting acquiring
@@ -144,26 +146,21 @@
         </div>
       </div>
 
-      <div class="max-w-screen-xl mx-auto container  px-4  sm:px-6 lg:px-8 mt-2">
+      <div class="max-w-5xl mx-auto container mt-2">
         <h2 class="mb-4 text-2xl italic">Pre-redesign</h2>
-        <img src="assets/images/old-screens.png" alt="platform screencap"
+        <vue-image img="assets/images/old-screens.png" alt="platform screencap"
           class="w-full max-w-5xl rounded-xl object-contain" />
       </div>
-      <div class="max-w-screen-xl mx-auto container  px-4  sm:px-6 lg:px-8 mt-4">
+      <div class="max-w-5xl mx-auto container mt-4">
         <h2 class="mb-4 text-2xl italic">Post-redesign</h2>
-        <img src="assets/images/new-screens.png" alt="platform screencap"
+        <vue-image img="assets/images/new-screens.png" alt="platform screencap"
           class="w-full max-w-5xl  rounded-xl object-contain" />
 
       </div>
       <div class="max-w-screen-lg mx-auto container  px-4 sm:py-12 sm:px-6 lg:py-14 lg:px-8">
-        <div class="banner-float animate__animated animate__fadeIn  max-w-2xl  ">
+        <div class="banner-float animate__animated animate__fadeIn  max-w-3xl mx-auto  ">
           <RouterLink to="/projects">
-            <button class="button w-full mt-12 flex items-center justify-center gap-3  max-w-5xl ">Back to projects <svg
-                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
-                viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-              </svg></button>
+            <button class="button w-full mt-12 flex items-center justify-center gap-3  max-w-5xl ">Back to projects</button>
           </RouterLink>
         </div>
       </div>
@@ -202,11 +199,12 @@
 </template>
 
 <script>
-// @ is an alias to /src
-
+// @ is an alias to /img
+import VueImage from '@/components/VueImage.vue';
 import sha256 from 'crypto-js/sha256';
 export default {
   name: "MyPocketSkill",
+  components: {VueImage},
   data() {
     return {
       projects: "all",

@@ -3,7 +3,7 @@
 
   <section class="bg-gray-950 text-white">
     <div class="max-w-screen-lg mx-auto container  px-4 sm:px-6">
-      <div class="banner-float animate__animated animate__fadeIn  max-w-2xl  pt-14">
+      <div class="banner-float animate__animated animate__fadeIn  max-w-3xl  pt-14 mx-auto">
         <!-- <h2 class="mb-4 text-3xl italic">Introduction</h2>
         <p class="text-gray-400">Outreach workers provide support, referrals and education to individuals in need across
           Australia. They work
@@ -21,7 +21,7 @@
           a significant financial burden for the organisations involved.
         </p>
       </div>
-      <div class="banner-float animate__animated animate__fadeIn  max-w-2xl mt-14">
+      <div class="banner-float animate__animated animate__fadeIn  max-w-3xl mt-14 mx-auto">
         <h2 class="mb-4 text-3xl italic">Research</h2>
         <p class="text-gray-400 mb-2">Video call interviews helped to substantiate evidence, that were outreach workers and
           outreach worker
@@ -31,11 +31,11 @@
       </div>
     </div>
     <div class="max-w-screen-xl mx-auto container  px-4  sm:px-6 lg:px-8 mt-14">
-      <img src="assets/images/affinity-map.png" alt="platform screencap"
-        class="w-full max-w-5xl max-h-[520px] rounded-xl object-contain bg-white" />
+      <vue-image img="assets/images/affinity-map.png" alt="platform screencap"
+        class="w-full max-w-5xl max-h-[520px] rounded-xl object-contain bg-white mx-auto" />
     </div>
     <div class="max-w-screen-lg mx-auto container  px-4 sm:px-6">
-      <div class="banner-float animate__animated animate__fadeIn  max-w-2xl  pt-14 pl-5 lg:px-0">
+      <div class="banner-float animate__animated animate__fadeIn  max-w-3xl  pt-14 pl-5 lg:px-0 mx-auto">
         <h2 class="mb-6 text-3xl italic">Key takeaways</h2>
         <ol class="list-decimal text-gray-400">
           <li class=" text-lg mb-6"><span class="text-gray-300">Facilite the flow of information</span><br>
@@ -65,18 +65,18 @@
           </li>
         </ol>
       </div>
-      <div class="banner-float animate__animated animate__fadeIn  max-w-2xl mt-14">
+      <div class="banner-float animate__animated animate__fadeIn  max-w-3xl mt-14 mx-auto">
         <h2 class="mb-4 text-3xl italic">Prototyping & testing</h2>
         <p class="text-gray-400">Early prototyping helped me garner user feedback and address user needs.
         </p>
       </div>
     </div>
     <div class="max-w-screen-xl mx-auto container  px-4  sm:px-6 lg:px-8 pt-14">
-      <img src="assets/images/wireframes.png" alt="wireframes"
-        class="w-full max-w-5xl max-h-[520px] rounded-xl object-contain  p-10 bg-gray-800" />
+      <vue-image img="assets/images/wireframes.png" alt="wireframes"
+        class="w-full max-w-5xl max-h-[520px] rounded-xl object-contain  p-10 bg-gray-800 mx-auto" />
     </div>
     <div class="max-w-screen-lg mx-auto container  px-4 sm:px-6 mt-14">
-      <div class="banner-float animate__animated animate__fadeIn  max-w-2xl  pl-5 lg:px-0">
+      <div class="banner-float animate__animated animate__fadeIn  max-w-3xl  pl-5 lg:px-0 mx-auto">
         <h2 class="mb-6 text-3xl italic">Findings</h2>
 
         <p class="text-gray-400 mb-6">User testing helped identify key areas to improve upon</p>
@@ -104,30 +104,30 @@
     </div>
 
     <div class="max-w-screen-lg mx-auto container  px-4 sm:px-6 mt-14">
-      <div class="banner-float animate__animated animate__fadeIn  max-w-2xl mt-14 pb-14">
+      <div class="banner-float animate__animated animate__fadeIn  max-w-3xl mt-14 pb-14 mx-auto">
         <h1 class="mb-4 text-4xl md:text-5xl italic">Final mockups</h1>
         <h2 class="mb-4 text-3xl italic">Combining shift managment with knowledge sharing</h2>
         <p class="text-gray-400">The main feed helped provide shift workers to easy access to upcoming events and shifts as well as new posts, all in one place.
-        </p>
-        <img src="assets/images/reach-hifi-0.png" alt="Shift management features"
+        </p> 
+        <vue-image img="assets/images/reach-hifi-0.png" alt="Shift management features" image-class="max-h-[414px] object-contain"
           class="w-full  max-h-[520px] rounded-xl object-contain  p-10  mt-14"
           style="background:linear-gradient(180deg, #4481A6 0%, rgba(68, 129, 166, 0.16) 100%);" />
         <h2 class="mb-4 text-3xl mt-12 italic">Upcoming events</h2>
         <p class="text-gray-400">The events page became easily filterable and highly visual, as to make it easy for users to find events they might be interested in.
         </p>
-        <img src="assets/images/reach-hifi-1.png" alt="Shift management features"
+        <vue-image img="assets/images/reach-hifi-1.png" alt="Shift management features" image-class="max-h-[414px] object-contain"
           class="w-full  max-h-[520px] rounded-xl object-contain  p-10  mt-14"
           style="background:linear-gradient(180deg, #4481A6 0%, rgba(68, 129, 166, 0.16) 100%);" />
           <h2 class="mb-4 text-3xl mt-12 italic">Gamifying the experience through awards</h2>
         <p class="text-gray-400">Gamification encourages users to post and interact regularly, providing them with rewards for doing so.
         </p>
-        <img src="assets/images/reach-hifi-2.png" alt="Shift management features"
+        <vue-image img="assets/images/reach-hifi-2.png" alt="Shift management features" image-class="max-h-[414px] object-contain"
           class="w-full  max-h-[520px] rounded-xl object-contain  p-10  mt-14"
           style="background:linear-gradient(180deg, #4481A6 0%, rgba(68, 129, 166, 0.16) 100%);" />
         <h2 class="mb-4 text-3xl mt-12 italic">An easy to navigate profile page</h2>
         <p class="text-gray-400">Through the profiles page, users can create new reflections, clock in and out of shifts and see previous reflects.
         </p>
-        <img src="assets/images/reach-hifi-3.png" alt="Shift management features"
+        <vue-image img="assets/images/reach-hifi-3.png" alt="Shift management features" image-class="max-h-[414px] object-contain"
           class="w-full  max-h-[520px] rounded-xl object-contain  p-10  mt-14"
           style="background:linear-gradient(180deg, #4481A6 0%, rgba(68, 129, 166, 0.16) 100%);" />
         <h2 class="mb-4 text-3xl mt-12 italic">Impact</h2>
@@ -152,9 +152,9 @@
 </template>
 
 <script>
-// @ is an alias to /src
+// @ is an alias to /img
 import PortfolioHeader from '@/components/PortfolioHeader.vue'
-
+import VueImage from '@/components/VueImage.vue';
 export default {
   name: "HomeView",
   data() {
@@ -165,7 +165,7 @@ export default {
   mounted() {
     // window.scrollTo(0, 0);
   },
-  components: { PortfolioHeader }
+  components: { PortfolioHeader, VueImage }
 }
 </script>
 <style  ></style>

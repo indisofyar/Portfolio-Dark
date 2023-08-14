@@ -55,11 +55,8 @@
       <div class="flex justify-end">
         <ul class="text-right">
           <li><router-link to="/">Home</router-link></li>
-          <li><router-link to="/mypocketskill">Project: MyPocketSkill</router-link></li>
-          <li><router-link to="/reach">Project: Reach</router-link></li>
-          <li><router-link to="/dot-iam">Project: DotIam</router-link></li>
           <li><router-link to="/about">About</router-link></li>
-          <li @click="showContact">Contact</li>
+          <li @click="showContact" style="cursor: pointer;">Contact</li>
         </ul>
       </div>
     </div>

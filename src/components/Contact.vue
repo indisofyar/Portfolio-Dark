@@ -2,10 +2,10 @@
   <!-- Contact -->
   <Transition name="fade-in-up">
     <section class="fixed w-full z-[100] h-[100vh] flex justify-center" v-if="$store.state.showContact">
-      <div class="w-full h-full absolute top-0 right-0 md:bg-black/80" @click="$store.commit('displayContact')">
+      <div class="w-full h-full absolute top-0 right-0 bg-white/20" @click="$store.commit('displayContact')">
       </div>
       <div
-        class="mx-auto max-w-screen-sm px-4 sm:px-6 lg:px-8 w-full pt-14 bg-black min-h-[660px] mt-20  rounded-xl z-1 flex items-center flex-col bg-[#040712] fixed bottom-0 md:absolute md:bottom-auto">
+        class="mx-auto max-w-screen-sm px-4 sm:px-6 lg:px-8 w-full py-14 bg-black  mt-20  rounded-xl z-1 flex items-center flex-col bg-[#040712] fixed bottom-0 md:absolute md:bottom-auto">
         <h1 class="mb-3 text-5xl md:text-6xl italic text-center">Get in contact</h1>
         <p class="text-base text-center mb-12 max-w-sm text-gray-400">I'm open to new connections and work opportunities </p>
 
@@ -86,6 +86,7 @@ export default {
 .fade-in-up-enter-from,
 .fade-in-up-leave-to {
   opacity: 0;
-  transform: translateY(20px);
+  filter: blur(7px);
+  /* transform: translateY(20px); */
 }
 </style>
