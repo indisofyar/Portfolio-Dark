@@ -22,22 +22,23 @@ body {
     background-color: blue;
 }
 
-button {
-    &.button {
-        color: $primary;
-        padding: 5px 15px;
-        border-radius: 1000px;
-        background-color: transparent;
-        border: 0.75px solid $primary;
-        transition: color 0.5s ease;
 
-        &:hover, &.selected {
-            border: 0.75px solid $thirdly;
-            background-color: $primary;
-            color: $thirdly;
-        }
+.button {
+    color: $primary;
+    padding: 5px 15px;
+    border-radius: 1000px;
+    background-color: transparent;
+    border: 0.75px solid $primary;
+    transition: color 0.5s ease;
+
+    &:hover,
+    &.selected {
+        border: 0.75px solid $thirdly;
+        background-color: $primary;
+        color: $thirdly;
     }
 }
+
 
 footer {
     padding-top: 50px;
@@ -72,11 +73,17 @@ body {
     color: $primary;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Cormorant Garamond', serif;
     letter-spacing: 0.02em;
     line-height: 1.2;
 }
+
 h1 {
 
     font-size: 2.5rem;
@@ -87,14 +94,14 @@ h2 {
     // text-transform: uppercase;
     font-size: 1.25rem;
     font-weight: 200;
-    
+
 }
 
 h3 {
     font-family: 'Cormorant Garamond', serif;
     margin-bottom: 2rem;
     font-size: 1.75rem;
-    
+
 }
 
 p {
@@ -196,13 +203,14 @@ p {
     opacity: 0;
     font-size: 2.5rem;
     transform: rotate(90deg);
-    
+
     &.animate {
         animation: smiley 1s ease;
         transform: rotate(90deg);
         opacity: 1;
     }
-    &.rotate{
+
+    &.rotate {
         animation: smileyRotate 2s ease;
         transform: rotate(0deg);
         opacity: 1;
@@ -261,11 +269,13 @@ p {
     margin: 0px 4px 8px 0px;
     font-size: 0.8rem;
 }
-a{
+
+a {
     color: $primary;
 }
-a:hover{
-    &:after{
+
+a:hover {
+    &:after {
         content: "";
         position: absolute;
         width: 100%;
@@ -281,10 +291,10 @@ a:hover{
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.5s;
+    transition: opacity 0.5s;
 }
 
 .fade-enter,
 .fade-leave-to {
-  opacity: 0;
+    opacity: 0;
 }

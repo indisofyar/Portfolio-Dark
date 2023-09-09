@@ -9,6 +9,8 @@ export default createStore({
     encryptionKey: 'welcometomyportfolio',
     viewing: 'all',
     showContact: false,
+    lightMode:false,
+    inProd: process.env.NODE_ENV === 'production'
   },
   getters: {},
   mutations: {

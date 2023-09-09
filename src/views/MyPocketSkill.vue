@@ -1,5 +1,5 @@
 <template>
-  <div v-if="!$store.state.unlocked">
+  <div v-if="$store.state.unlocked">
     <section class="bg-gray-950 text-white">
       <div class="max-w-screen-lg mx-auto container  px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-">
         <div class="banner-float animate__animated animate__fadeIn pt-[100px] max-w-3xl mx-auto boder">
@@ -210,7 +210,7 @@ export default {
       projects: "all",
       input: '',
       hashedPassword: '52a76a09ec2254bb5b72ffe8b88ded78bc735c2cdd8868c0469bf4034088a5fa',
-      showPassword: false,
+      showPassword: true,
       type: 'password',
     };
   },

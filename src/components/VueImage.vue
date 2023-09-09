@@ -1,6 +1,6 @@
 <template>
   <div class="overflow-hidden">
-    {{ objectFit }}
+  
     <img :src="img" @click="showSingle" style="cursor: zoom-in;" class="max-h-full  w-full h-full" :class="imageClass">
     <vue-easy-lightbox
       :visible="visibleRef"

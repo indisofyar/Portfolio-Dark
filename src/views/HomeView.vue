@@ -1,55 +1,57 @@
 <template>
-  <div class="w-full h-full relative overflow-hidden pt-20">
-    <img src="assets/images/background.svg" alt="#" class=" animate__fadeIn object-cover w-full absolute opacity-[5%]"
-      id="backgroundElement">
+  <div class="w-full h-full relative overflow-hidden pt-20 bg-slate-300 dark:bg-black dark:bg-current">
+    <img src="assets/images/background.svg" alt="#"
+      class=" animate__fadeIn object-cover w-full absolute opacity-[5%] invert dark:filter-none" id="backgroundElement">
     <section
-      class="pt-12 pb-24 px-3 flex items-center min-h-50 justify-center align-center min-h-[50vh] relative overflow-hidden ">
+      class="pt-12 pb-24 px-3 flex items-center min-h-50 justify-center align-center min-h-[50vh] relative overflow-hidden text-black dark:text-white">
 
       <div class="mx-auto max-w-[43rem] relative z-10">
         <div class="text-center banner-float animate__animated animate__fadeInUp">
-          <p class="text-base font-medium leading-8 text-white text-shadow">A London based UX Designer</p>
+          <p class="text-base font-medium leading-8 dark:text-white text-shadow">A London based UX Designer </p>
           <h1 class="mt-3 text-[3.75rem] leading-[4rem] tracking-tight italic text-shadow mb-5"
             style="font-style: italic;">
             Indi Sofyar
           </h1>
-          <p class="mt-3 text-lg leading-relaxed text-shadow text-slate-400">Passionate about finding the overlap between
+          <p class="mt-3 text-lg leading-relaxed text-shadow dark:text-slate-400">Passionate about finding the overlap
+            between
             usability, accessibility, feasibility & joy</p>
         </div>
       </div>
     </section>
   </div>
 
-
-  <section class="bg-gray-950 text-white min-h-[100vh]  relative z-20" id="projects">
+  <section class="bg-slate-200 dark:bg-gray-950 text-black dark:text-white min-h-[100vh]  relative z-20" id="projects">
     <div class="max-w-screen-xl mx-auto container  px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8 ">
       <div class="banner-float animate__animated animate__fadeIn">
         <h2 class=" uppercase tracking-widest text-xl  mb-8 font-light font-sans">Projects</h2>
         <transition name="fade" mode="out-in">
-          <div data-aos="fade-up" data-aos-duration="1200" class="md:columns-2 gap-10 mx-auto mb-10">
+          <div data-aos="fade-up" data-aos-duration="1200" class="md:grid-cols-2 grid gap-10 mx-auto mb-10">
             <div class="col-md-5 w-full" data-aos="fade-up" data-aos-duration="1600">
               <h3 class="mb-2 text-3xl">MyPocketSkill</h3>
-              <p class="mb-5 max-w-lg"> MyPocketSkill connects young people to money earning tasks. I helped to consistently
+              <p class="mb-5 max-w-lg"> MyPocketSkill connects young people to money earning tasks. I helped to
+                consistently
                 improve UX through a combination of minor visual improvements and longer term redesigns. </p>
               <div class="mb-5">
-                <div class="tag">UX</div>
-                <div class="tag">Web development</div>
-                <div class="tag">Usability testing</div>
-                <div class="tag">User interviews</div>
-                
-              </div><router-link to="/mypocketskill" class="" @click="scrollToTop"><button class="button"> View project <i
+                <div class="tag dark:border-white bg-slate-300 dark:bg-transparent">UX</div>
+                <div class="tag dark:border-white bg-slate-300 dark:bg-transparent">Web development</div>
+                <div class="tag dark:border-white bg-slate-300 dark:bg-transparent">Usability testing</div>
+                <div class="tag dark:border-white bg-slate-300 dark:bg-transparent">User interviews</div>
+
+              </div><router-link to="/mypocketskill" class="" @click="scrollToTop"><button
+                  class="button border-black bg-slate-800"> View project <i
                     class="bi bi-arrow-right"></i></button></router-link>
             </div>
             <div style="display: flex; justify-content: center;">
               <div class="image-container relative z-11">
-               
+
                 <vue-image img="assets/images/mps-cover2.png" class="rounded max-h-[270px] object-cover"
-                  alt="platform screencap" style="width: 100%;"/>
-                </div>
+                  alt="platform screencap" style="width: 100%;" />
+              </div>
             </div>
           </div>
         </transition>
         <transition name="fade" mode="out-in">
-          <div data-aos="fade-up" data-aos-duration="1200" class="md:columns-2 gap-10 mx-auto mb-10 "
+          <div data-aos="fade-up" data-aos-duration="1200" class="md:grid-cols-2 grid gap-10 mx-auto mb-10 "
             v-if="projects != 'fsd'">
             <div class="col-md-5 w-full" data-aos="fade-up" data-aos-duration="1600">
               <h3 class="mb-2 text-3xl">Reach App</h3>
@@ -61,31 +63,29 @@
                 management.
               </p>
               <div class="mb-5">
-                <div class="tag">UX</div>
-                <div class="tag">Design</div>
-                <div class="tag">Usability testing</div>
-                <div class="tag">User interviews</div>
-                <div class="tag">Double diamond</div>
+                <div class="tag dark:border-white bg-slate-300 dark:bg-transparent">UX</div>
+                <div class="tag dark:border-white bg-slate-300 dark:bg-transparent">Design</div>
+                <div class="tag dark:border-white bg-slate-300 dark:bg-transparent">Usability testing</div>
+                <div class="tag dark:border-white bg-slate-300 dark:bg-transparent">User interviews</div>
+                <div class="tag dark:border-white bg-slate-300 dark:bg-transparent">Double diamond</div>
               </div>
               <router-link to="/reach" @click="scrollToTop">
-                <button class="button">
-                  View project <i class="bi bi-arrow-right"></i>
-                </button>
+                <button class="button border-black bg-slate-800"> View project <i class="bi bi-arrow-right"></i></button>
               </router-link>
             </div>
-            <div style="display: flex; justify-content: center;" >
-
+            <div style="display: flex; justify-content: center;">
               <div class="image-container ">
-                <vue-image img="assets/images/reach.png" style="width: 100%;" class="rounded max-h-[270px] object-cover" alt="platform screencap" />
+                <vue-image img="assets/images/reach.png" style="width: 100%;" class="rounded max-h-[270px] object-cover"
+                  alt="platform screencap" />
               </div>
             </div>
           </div>
         </transition>
         <transition name="fade" mode="out-in">
-          <div data-aos="fade-up" data-aos-duration="1200" class="md:columns-2 gap-10 mx-auto mb-10"
+          <div data-aos="fade-up" data-aos-duration="1200" class="md:grid-cols-2 grid gap-10 mx-auto mb-10"
             v-if="projects != 'fsd'">
             <div class="col-md-5 w-full" data-aos="fade-up" data-aos-duration="1600">
-              <h3 class="mb-2 text-3xl">DotIAM <span class="italic text-blue-300">Work in progress</span></h3>
+              <h3 class="mb-2 text-3xl">DotIAM </h3>
 
               <p class="mb-5 max-w-lg">
                 Dot IAM is a decentralised identity management platform. It enables users to store and manage their
@@ -93,22 +93,21 @@
 
               </p>
               <div class="mb-5">
-                <div class="tag">UX</div>
-                <div class="tag">Startup</div>
-                <div class="tag">Landing page</div>
-                <div class="tag">Discovery</div>
+                <div class="tag dark:border-white bg-slate-300 dark:bg-transparent">UX</div>
+                <div class="tag dark:border-white bg-slate-300 dark:bg-transparent">Startup</div>
+                <div class="tag dark:border-white bg-slate-300 dark:bg-transparent">Landing page</div>
+                <div class="tag dark:border-white bg-slate-300 dark:bg-transparent">Discovery</div>
 
               </div>
               <router-link to="/dot-iam" @click="scrollToTop">
-                <button class="button">
-                  View project <i class="bi bi-arrow-right"></i>
-                </button>
+                <button class="button border-black bg-slate-800"> View project <i class="bi bi-arrow-right"></i></button>
               </router-link>
             </div>
             <div style="display: flex; justify-content: center;">
 
               <div class="image-container">
-                <vue-image img="assets/images/dotiam-cover.png" style="width: 100%;" class="rounded max-h-[270px] object-cover" alt="platform screencap" />
+                <vue-image img="assets/images/dotiam-cover.png" style="width: 100%;"
+                  class="rounded max-h-[270px] object-cover" alt="platform screencap" />
               </div>
             </div>
           </div>
@@ -137,18 +136,22 @@ export default {
     const backgroundElement = document.getElementById('backgroundElement');
     const vm = this;
     // let prevScrollPosition = window.pageYOffset;
-    window.addEventListener('scroll', function () {
-      const currentScrollPosition = window.pageYOffset;
-      if (currentScrollPosition > 15) {
-        // Downwards scroll
-        backgroundElement.classList.add('scroll-down');
-      } else {
-        // Upwards scroll
-        backgroundElement.classList.remove('scroll-down');
-      }
+    const isDesktopSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    if (!isDesktopSafari) {
+      window.addEventListener('scroll', function () {
+        const currentScrollPosition = window.pageYOffset;
+        if (currentScrollPosition > 15) {
+          // Downwards scroll
+          backgroundElement.classList.add('scroll-down');
+        } else {
+          // Upwards scroll
+          backgroundElement.classList.remove('scroll-down');
+        }
 
-      // prevScrollPosition = currentScrollPosition;
-    });
+        // prevScrollPosition = currentScrollPosition;
+      });
+    }
+
     if (this.$route.path == '/ux-design') {
       vm.projects = 'ux'
       // vm.$store.
@@ -156,10 +159,10 @@ export default {
     if (this.$route.path == '/projects') {
       const div = document.getElementById("projects");
       console.log(div)
-      if(div){
+      if (div) {
         div.scrollIntoView();
       }
-      
+
       // vm.$store.
     }
   },
@@ -172,7 +175,9 @@ export default {
 </script>
 <style  >
 #backgroundElement {
-  transition: 3.2s ease;
+  transform: translateZ(0);
+  transition-timing-function: ease;
+  transition-duration: 2.2s;
   top: -100px;
   min-width: calc(100% + 200px);
   right: -200px;
@@ -181,6 +186,7 @@ export default {
 }
 
 #backgroundElement.scroll-down {
+  will-change: transform, opacity;
   top: 0px;
   /* left: -100px; */
   right: 0px;
@@ -192,7 +198,7 @@ export default {
   display: flex;
   align-items: center;
   position: relative;
-  height: 400px;
+  height: 350px;
   width: 515px;
 }
 
@@ -237,5 +243,4 @@ export default {
 .fade-leave-to img {
   opacity: 0;
   /* Exclude images from the opacity transition */
-}
-</style>
+}</style>

@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class', // Enable dark mode
+
   content: ['./src/**/*.{vue,html,js}', './public/index.html'],
   theme: {
     extend: {},
@@ -11,6 +13,6 @@ module.exports = {
       'body': ['"Open Sans"'],
     }
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
 
