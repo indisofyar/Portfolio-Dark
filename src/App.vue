@@ -90,7 +90,9 @@
 import router from './router'
 import Contact from './components/Contact.vue'
 // const app = new Vue({})
+
 export default {
+  
   name: "App",
   router,
   data() {
@@ -101,19 +103,11 @@ export default {
   mounted() {
     // document.querySelector('html').classList.toggle('dark');
     this.$store.state.lightMode = false;
-    // // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-    // if (
-    //   localStorage.theme === "dark" ||
-    //   (!("theme" in localStorage) &&
-    //     window.matchMedia("(prefers-color-scheme: dark)").matches)
-    // ) {
-    //   document.documentElement.classList.add("dark");
-    // } else {
-    //   document.documentElement.classList.remove("dark");
-    // }
+    this.toggleDarkMode();
   },
   computed:{
     lightMode(){
+      console.log(this.$store.state.lightMode)
       return this.$store.state.lightMode
     }
   },
@@ -127,7 +121,12 @@ export default {
       this.$store.commit("displayContact");
     },
     toggleDarkMode() {
-      document.querySelector('html').classList.toggle('dark');
+      if(this.lightMode == true){
+        document.querySelector('html').classList.remove('dark');
+      } else {
+        document.querySelector('html').classList.add('dark');
+      }
+      
     },
   },
   components: { Contact },
