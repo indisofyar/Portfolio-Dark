@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-full relative overflow-hidden pt-20 bg-slate-300 dark:bg-black dark:bg-current">
+  <div class="w-full h-full relative overflow-hidden pt-20 bg-slate-300 dark:bg-black">
     <img src="assets/images/background.svg" alt="#"
       class=" animate__fadeIn object-cover w-full absolute opacity-[5%] invert dark:filter-none" id="backgroundElement">
     <section
@@ -193,7 +193,6 @@ export default {
   opacity: 1;
   transform: scale(1.1);
 }
-
 .image-container {
   display: flex;
   align-items: center;
@@ -201,6 +200,14 @@ export default {
   height: 350px;
   width: 515px;
 }
+
+@media (max-width: 767px) {
+  .image-container {
+    width: 275px;
+  }
+}
+
+
 
 .platform-screencap {
   width: 379px;
