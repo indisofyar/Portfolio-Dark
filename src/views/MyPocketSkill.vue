@@ -110,7 +110,7 @@
         </div>
       </div>
       <div class="max-w-screen-xl mx-auto container  px-4  sm:px-6 lg:px-8 ">
-        <vue-image img="assets/images/chat-screen.png" alt="platform screencap"
+        <vue-image img="assets/images/chat-screen-improvements.png" alt="platform screencap"
           class="w-full max-w-5xl rounded-xl object-contain mx-auto" />
       </div>
       <div class="max-w-screen-lg mx-auto container  px-4 sm:py-12 sm:px-6 lg:py-14 lg:px-8">
