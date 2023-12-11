@@ -10,14 +10,15 @@
       </div>
       <div class="flex flex-col justify-center max-w-lg">
         <h1 class="text-3xl font-medium mb-4">Hi I'm Indi,</h1>
+      
         <p class="mb-4">
-          I'm enthralled by the challenge of delivering high quality products which people <u
-            class="decoration-blue-600">actually want to use</u>, and discovering intersections of user needs, business
-          goals and visual design.
+          I'm currently enjoying working as a UX designer & developer at MyPocketSkill. Previously I've worked as a
+          graphic designer at a fintech and worked with young people & conducted focus groups at NSW Health.
         </p>
         <p class="mb-4">
-          I'm currently enjoying working as a designer & developer at MyPocketSkill. Previously I've worked as a
-          graphic designer at a fintech and worked with young people & conducted focus groups at NSW Health.
+          I love the challenge of delivering high quality products which people <u
+            class="decoration-blue-600">actually want to use</u>, and discovering intersections of user needs, business
+          goals and visual design.
         </p>
         <p class="mb-4">
           Outside of work, I'm passionate about food, cooking and exploring a

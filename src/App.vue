@@ -39,7 +39,7 @@
     </div>
   </header>
 
-  <div class="min-h-50 dark:bg-black bg-white">
+  <div class="min-h-[80vh] dark:bg-black bg-white">
     <Contact></Contact>
     <!-- <transition name="fade" mode="out-in"> -->
     <router-view> </router-view>

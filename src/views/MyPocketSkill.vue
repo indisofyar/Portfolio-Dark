@@ -103,11 +103,15 @@
       </div>
       <div class="max-w-screen-lg mx-auto container  px-4 sm:px-6 lg:px-8 ">
         <div class="mx-auto banner-float animate__animated animate__fadeIn  max-w-3xl  ">
-          <h2 class="mb-4 text-3xl italic">Presenting this research</h2>
+          <h2 class="mb-4 text-3xl italic">Changes</h2>
           <p class="text-gray-400  mb-8">
-            Through relaying this back to the team, I was able to get it added to the roadmap.
+            Over the course of 3 seperate design sprints, we gradually features as adressed user problems in response to user feedback.
           </p>
         </div>
+      </div>
+      <div class="max-w-screen-xl mx-auto container  px-4  sm:px-6 lg:px-8 bg-gray min-h-[300px]">
+        <vue-image img="" alt="platform screencap"
+          class="w-full max-w-5xl rounded-xl object-contain mx-auto" />
       </div>
       <div class="max-w-screen-xl mx-auto container  px-4  sm:px-6 lg:px-8 ">
         <vue-image img="assets/images/chat-screen-improvements.png" alt="platform screencap"
